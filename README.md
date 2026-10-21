@@ -68,13 +68,13 @@ Um *prompt* é uma instrução, pergunta ou conjunto de informações que fornec
 Em termos simples, é aquilo que pedimos à IA.
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=gFGoLiO_8Zo">
+  <a href="https://www.youtube.com/watch?v=gFGoLiO_8Zo" target="_blank" rel="noopener noreferrer">
     <img src="https://img.youtube.com/vi/gFGoLiO_8Zo/hqdefault.jpg" alt="Assistir ao vídeo complementar sobre Engenharia de Prompts no YouTube" width="600">
   </a>
 </p>
 
 <p align="center">
-  ▶️ <a href="https://www.youtube.com/watch?v=gFGoLiO_8Zo"><strong>Clique na imagem para assistir no YouTube</strong></a>
+  ▶️ <a href="https://www.youtube.com/watch?v=gFGoLiO_8Zo" target="_blank" rel="noopener noreferrer"><strong>Clique na imagem para assistir no YouTube</strong></a>
 </p>
 
 **Exemplo:**
