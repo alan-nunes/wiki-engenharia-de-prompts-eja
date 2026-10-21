@@ -235,7 +235,8 @@ Uma pessoa enxerga uma frase formada por palavras. O sistema de IA, antes de pro
 
 <details>
 <summary>🔍 Clique para ver o esquema do processamento</summary>
-```text
+
+  ```text
 ┌─────────────────────────────┐
 │ 1. O usuário escreve        │
 │ "Crie um site para minha    │
