@@ -53,7 +53,8 @@ Por exemplo, uma pessoa pode utilizar essas ferramentas para:
 - 📚 Estudar assuntos novos e esclarecer dúvidas.
 - 🧮 Organizar informações e planejar despesas.
 
-Entretanto, **saber utilizar a IA vai além de fazer perguntas**. É importante aprender a explicar o que queremos, avaliar as respostas e corrigir os resultados quando necessário.
+> [!IMPORTANT]
+> **Saber utilizar a IA vai além de fazer perguntas. É importante aprender a explicar o que queremos, avaliar as respostas e corrigir os resultados quando necessário.**
 
 É nesse contexto que entra a Engenharia de Prompts.
 
@@ -85,7 +86,8 @@ Crie um cartaz para divulgar uma venda de bolos.
 
 Esse é um prompt válido. Entretanto, ele não explica quais informações devem aparecer, como será o visual ou quem verá o cartaz.
 
-Podemos melhorar a instrução:
+<details>
+<summary>✨Clique para ver como melhorar esse prompt</summary>
 
 ```text
 Crie um cartaz para divulgar a venda de bolos caseiros.
@@ -98,6 +100,7 @@ Não invente preços ou informações sobre o vendedor.
 ```
 
 A segunda instrução oferece mais detalhes sobre o resultado esperado.
+</details>
 
 ## 2.2. O que é Engenharia de Prompts?
 
@@ -125,7 +128,8 @@ Imagine que você queira organizar sua rotina.
 Organize minha rotina.
 ```
 
-**Pedido orientado:**
+<details>
+<summary>🧭 Clique para ver o pedido orientado</summary>
 
 ```text
 Ajude-me a organizar minha rotina semanal.
@@ -139,8 +143,10 @@ meus horários de trabalho e meus compromissos fixos.
 ```
 
 O segundo prompt explica melhor a necessidade e orienta a IA sobre como proceder.
+</details>
 
-Observe também que a IA pode fazer perguntas antes de produzir a resposta. Isso é útil quando faltam informações importantes.
+> [!NOTE]
+> **Observe também que a IA pode fazer perguntas antes de produzir a resposta. Isso é útil quando faltam informações importantes.**
 
 ## 2.4. Para que serve a Engenharia de Prompts?
 
@@ -155,7 +161,8 @@ Ela pode ser aplicada a diferentes situações:
 | Comunicação | Preparar mensagens, convites e apresentações |
 | Tecnologia | Planejar sites, aplicativos e projetos digitais |
 
-**Ideia principal:** quanto mais claramente você comunicar seu objetivo e as informações necessárias, maiores serão as chances de receber um resultado útil. Ainda assim, nenhuma instrução garante que a resposta estará correta.
+> [!IMPORTANT]
+> **Ideia principal: quanto mais claramente você comunicar seu objetivo e as informações necessárias, maiores serão as chances de receber um resultado útil. Ainda assim, nenhuma instrução garante que a resposta estará correta.**
 
 ---
 
@@ -185,7 +192,8 @@ Durante o treinamento, o modelo aprende relações entre palavras, partes de pal
 
 Quando você envia um prompt, o modelo utiliza o texto recebido e o contexto disponível para gerar uma resposta.
 
-Ele não funciona exatamente como uma pessoa lendo e compreendendo o mundo. Pode produzir respostas úteis, mas também cometer erros ou interpretar uma instrução de maneira diferente da esperada.
+> [!NOTE]
+> **Ele não funciona exatamente como uma pessoa lendo e compreendendo o mundo. Pode produzir respostas úteis, mas também cometer erros ou interpretar uma instrução de maneira diferente da esperada.**
 
 ## 3.2. O que são tokens?
 <p align="center">
@@ -220,12 +228,13 @@ Quero criar um site para minha loja.
 
 Uma pessoa enxerga uma frase formada por palavras. O sistema de IA, antes de processá-la, utiliza um processo chamado *tokenização* para dividir o texto em unidades reconhecidas pelo modelo.
 
-A divisão exata depende do modelo e de seu método de tokenização. Não existe uma separação universal que possa ser aplicada a todos os sistemas.
+> [!NOTE]
+> **A divisão exata depende do modelo e de seu método de tokenização. Não existe uma separação universal que possa ser aplicada a todos os sistemas.**
 
 ## 3.3. Uma visualização do processamento
 
-O esquema abaixo representa, de forma simplificada, o caminho percorrido por uma instrução.
-
+<details>
+<summary>🔍 Clique para ver o esquema do processamento</summary>
 ```text
 ┌─────────────────────────────┐
 │ 1. O usuário escreve        │
@@ -261,6 +270,7 @@ O esquema abaixo representa, de forma simplificada, o caminho percorrido por uma
 ```
 
 Esse esquema não representa todos os detalhes internos dos modelos, mas ajuda a compreender as principais etapas.
+</details>
 
 ## 3.4. Como a IA escolhe as próximas palavras?
 
@@ -276,9 +286,8 @@ Dependendo do contexto, o modelo pode atribuir probabilidades diferentes a conti
 
 O modelo seleciona um próximo token conforme seu mecanismo de geração e continua o processo, utilizando os tokens já produzidos para gerar os seguintes.
 
-Isso não significa que ele sempre escolha a palavra mais provável de maneira determinística. Os métodos de geração e as configurações podem influenciar o resultado.
-
-É por isso que duas respostas à mesma pergunta podem ser diferentes.
+> [!NOTE]
+> **Isso não significa que ele sempre escolha a palavra mais provável de maneira determinística. Os métodos de geração e as configurações podem influenciar o resultado. É por isso que duas respostas à mesma pergunta podem ser diferentes.**
 
 ## 3.5. Por que a quantidade de tokens importa?
 
@@ -288,7 +297,8 @@ A janela de contexto determina quanto conteúdo o modelo consegue considerar em 
 
 Quando uma conversa ou um documento é muito longo, parte do conteúdo pode não estar disponível para uma determinada geração, dependendo do sistema e da forma como o contexto é administrado.
 
-Por isso, é importante organizar as informações e evitar repetições desnecessárias.
+> [!TIP]
+> **Organize as informações e evite repetições desnecessárias.**
 
 ## 3.6. Experimento: observando a tokenização
 
@@ -327,14 +337,18 @@ Em seguida, experimente:
 - Um texto em português com acentos.
 - Um prompt completo.
 
-### O que observar?
-
+<details>
+<summary> 🤔  O que observar?</summary>
+  
 1. A quantidade de palavras é igual à quantidade de tokens?
 2. Uma palavra pode ser dividida em mais de um token?
 3. Frases maiores tendem a produzir mais tokens?
 4. A mesma frase pode ser dividida de maneira diferente por tokenizadores distintos?
 
-**Importante:** o tokenizador é uma ferramenta de demonstração. A divisão observada depende da codificação selecionada e não representa necessariamente o funcionamento de todos os modelos de IA.
+</details>
+
+> [!IMPORTANT]
+> **O tokenizador é uma ferramenta de demonstração. A divisão observada depende da codificação selecionada e não representa necessariamente o funcionamento de todos os modelos de IA.**
 
 ---
 
